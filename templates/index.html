@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+  </head>
+  <body>
+	<form method ="POST" action="/prediction">
+        {% csrf_token %}
+        <input name="ph_in"  placeholder = "ph"></input></br>
+        <input name="EC_in"  placeholder = "EC dS/m"></input></br>
+        <input name="OC_in"  placeholder = "OC%"></input></br>
+        <input name="p2o5_in"  placeholder = "p2o5 (kg/ha)"></input></br>
+        <input name="k2o_in" placeholder = "k2o (kg/ha)"></input></br>
+        <input name="S_in" placeholder = "S (ppm)"></input></br>
+        <input name="Fe_in" placeholder = "Fe (ppm)"></input></br>
+        <input name="Mn_in" placeholder = "Mn (ppm)"></input></br>
+        <input name="Zn_in" placeholder = "Zn (ppm)"></input></br>
+        <input name="Cu_in" placeholder = "Cu (ppm)"></input></br>
+        <button type = "submit">PREDICTION</button>
+        
+
+        
+        
+    </form>
+  </body>
+</html>
